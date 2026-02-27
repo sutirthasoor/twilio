@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 // MessageCentral Configuration
 const MESSAGECENTRAL_CONFIG = {
   customerId: 'C-55617103B2D841D',
-  password: process.env.MC_PASSWORD, // Your actual password (not base64 yet)
+  password: 'Raj#@1234', // Your actual password (not base64 yet)
   baseURL: 'https://cpaas.messagecentral.com'
 };
 
