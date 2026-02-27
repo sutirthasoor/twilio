@@ -12,7 +12,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // MessageCentral Configuration
 const MESSAGECENTRAL_CONFIG = {
-  customerId: process.env.MC_CUSTOMER_ID,
+  customerId: 'C-55617103B2D841D',
   password: process.env.MC_PASSWORD, // Your actual password (not base64 yet)
   baseURL: 'https://cpaas.messagecentral.com'
 };
@@ -36,7 +36,7 @@ async function getAuthToken(forceNew = false) {
     
     const response = await axios.get(`${MESSAGECENTRAL_CONFIG.baseURL}/auth/v1/authentication/token`, {
       params: {
-        customerId: MESSAGECENTRAL_CONFIG.customerId,
+        customerId: 'C-55617103B2D841D',
         key: encodedPassword,
         scope: 'NEW',
         country: '91',
@@ -68,7 +68,7 @@ app.get('/', (req, res) => {
   res.json({ 
     status: 'active', 
     message: 'MessageCentral Verify API is running',
-    customerId: MESSAGECENTRAL_CONFIG.customerId
+    customerId: 'C-55617103B2D841D'
   });
 });
 
