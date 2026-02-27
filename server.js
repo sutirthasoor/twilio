@@ -40,7 +40,7 @@ async function getAuthToken(forceNew = false) {
         key: encodedPassword,
         scope: 'NEW',
         country: '91',
-        email: process.env.MC_EMAIL || ''
+        email: 'estartupsuvidha@gmail.com' || ''
       },
       headers: {
         'accept': '*/*'
