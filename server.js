@@ -255,7 +255,7 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`\n🚀 MessageCentral Verify server is running!`);
   console.log(`📡 URL: http://localhost:${PORT}`);
-  console.log(`📱 Customer ID: ${MESSAGECENTRAL_CONFIG.customerId}`);
+  console.log(`📱 Customer ID: C-55617103B2D841D`);
   console.log(`\n📝 Test endpoints:`);
   console.log(`   POST http://localhost:${PORT}/start-verify`);
   console.log(`   POST http://localhost:${PORT}/check-verify`);
